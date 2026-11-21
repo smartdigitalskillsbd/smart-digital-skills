@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Digital Skills — AI Tools, Canva, Graphic Design, Digital Marketing, Web Development ও Python Programming শিখুন সহজ বাংলায়।">
+  <meta name="keywords" content="বাংলা টিউটোরিয়াল, AI Tools, Canva, Graphic Design, Digital Marketing, Web Development, Python">
+  <meta name="author" content="Smart Digital Skills">
+  <meta name="theme-color" content="#17365D">
+  <title>Smart Digital Skills | শিখুন, দক্ষতা বাড়ান</title>
+  <style>
+    :root {
+      --navy: #17365D;
+      --navy-dark: #102844;
+      --cream: #F5EFE6;
+      --white: #ffffff;
+      --ink: #243247;
+      --muted: #667085;
+      --accent: #D99B45;
+      --line: #e7dfd3;
+      --shadow: 0 12px 30px rgba(23, 54, 93, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans Bengali", "Hind Siliguri", "Segoe UI", sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.75;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+    .topbar {
+      background: var(--navy-dark);
+      color: #eaf0f8;
+      text-align: center;
+      padding: 7px 12px;
+      font-size: 13px;
+    }
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 22px 0 18px;
+    }
+    .brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.brand {
+  justify-content: center;
+  width: 100%;
+}
+
+nav {
+  justify-content: center;
+}
+    .brand { display: flex; align-items: center; gap: 13px; }
+    .logo {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center;
+      color: var(--navy); background: var(--cream);
+      font-size: 22px; font-weight: 800;
+    }
+    .brand h1 { margin: 0; font-size: clamp(22px, 4vw, 31px); line-height: 1.25; }
+    .brand p { margin: 3px 0 0; color: #d9e3ef; font-size: 13px; }
+    nav {
+      display: flex; flex-wrap: wrap; gap: 7px;
+      margin-top: 20px; justify-content: center;
+    }
+    nav a {
+      color: #fff; padding: 8px 14px; border-radius: 8px;
+      font-size: 14px; transition: .2s;
+    }
+    nav a:hover, nav a:focus { background: rgba(255,255,255,.15); }
+    .hero { padding: 62px 0 48px; }
+    .hero-card {
+      background: linear-gradient(120deg, #17365D, #244e7c);
+      color: white; text-align: center; border-radius: 22px; padding: clamp(28px, 6vw, 62px);
+      box-shadow: var(--shadow); position: relative; overflow: hidden;
+    }
+    .hero-card:after {
+      content: ""; position: absolute; width: 260px; height: 260px;
+      border: 1px solid rgba(255,255,255,.13); border-radius: 50%;
+      right: -65px; top: -95px; box-shadow: 0 0 0 28px rgba(255,255,255,.035), 0 0 0 58px rgba(255,255,255,.025);
+    }
+    .eyebrow {
+      display: inline-block; color: #ffe0ad; background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18); border-radius: 30px;
+      padding: 5px 13px; font-size: 13px; margin-bottom: 14px;
+    }
+    .hero h2 { font-size: clamp(28px, 5vw, 46px); line-height: 1.3; margin: 0 auto 14px; max-width: 720px; }
+    .hero p {
+  color: #e5edf6;
+  max-width: 680px;
+  margin: 0 auto 24px;
+  font-size: 16px;
+}
+    .btn {
+      display: inline-block; padding: 11px 19px; border-radius: 9px;
+      font-weight: 700; font-size: 14px; transition: .2s;
+    }
+    .btn-primary { background: var(--accent); color: #1e2b3d; }
+    .btn-primary:hover { background: #edb45f; transform: translateY(-2px); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.55); color: white; }
+    .btn-outline:hover { background: rgba(255,255,255,.12); }
+    section { padding: 28px 0 44px; }
+    .section-head { margin-bottom: 22px; }
+    .section-head h2 { color: var(--navy); font-size: clamp(23px, 4vw, 30px); margin: 0 0 5px; }
+    .section-head p { margin: 0; color: var(--muted); }
+    .grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+    }
+    .topic-card, .content-card, .about-card {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: 16px; padding: 22px; box-shadow: var(--shadow);
+    }
+    .topic-icon {
+      width: 46px; height: 46px; display: grid; place-items: center;
+      border-radius: 13px; background: #f2eadf; font-size: 23px; margin-bottom: 12px;
+    }
+    .topic-card h3 { color: var(--navy); margin: 0 0 7px; font-size: 19px; }
+    .topic-card p { color: var(--muted); font-size: 14px; margin: 0 0 13px; }
+    .text-link { color: #1d5b91; font-weight: 700; font-size: 14px; }
+    .text-link:hover { text-decoration: underline; }
+    .two-col { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; }
+    .content-card h3, .about-card h3 { color: var(--navy); margin: 0 0 10px; }
+    .content-card p, .about-card p { color: var(--muted); margin: 0 0 12px; }
+    .feature-list { padding-left: 20px; margin: 10px 0 0; }
+    .feature-list li { margin: 5px 0; }
+    .cta {
+      background: #e9dfd1; border: 1px solid #ded1c0; border-radius: 18px;
+      padding: 28px; display: flex; justify-content: space-between; align-items: center;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .cta h2 { margin: 0 0 5px; color: var(--navy); }
+    .cta p { margin: 0; color: var(--muted); }
+    .cta .btn { background: var(--navy); color: white; }
+    footer { background: var(--navy-dark); color: #e5edf6; margin-top: 30px; padding: 30px 0 18px; }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 25px; }
+    footer h3, footer h4 { color: white; margin: 0 0 9px; }
+    footer p { color: #c5d1df; margin: 0; font-size: 14px; }
+    .footer-links { display: grid; gap: 6px; font-size: 14px; color: #d7e1ec; }
+    .footer-links a:hover { color: #ffd18b; }
+    .copyright { border-top: 1px solid rgba(255,255,255,.15); margin-top: 23px; padding-top: 14px; text-align: center; font-size: 13px; color: #bdc9d7; }
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      .two-col { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 540px) {
+      .brand-row { align-items: flex-start; }
+      .logo { width: 42px; height: 42px; }
+      nav { gap: 3px; }
+      nav a { padding: 7px 9px; font-size: 13px; }
+      .hero { padding: 30px 0 24px; }
+      .grid, .footer-grid { grid-template-columns: 1fr; }
+      .topic-card, .content-card, .about-card { padding: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">সহজ বাংলায় ডিজিটাল দক্ষতা শেখার নির্ভরযোগ্য ঠিকানা</div>
+
+  <header id="home">
+    <div class="container">
+      <div class="brand-row">
+        <a class="brand" href="#home" aria-label="Smart Digital Skills হোম">
+          <div class="logo">SDS</div>
+          <div>
+            <h1>Smart Digital Skills</h1>
+            <p>শিখুন, দক্ষতা বাড়ান এবং অনলাইনে এগিয়ে যান</p>
+          </div>
+        </a>
+      </div>
+      <nav aria-label="প্রধান মেনু">
+        <a href="#home">হোম</a>
+        <a href="#topics">বিষয়সমূহ</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#start">শুরু করুন</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-card">
+          <span class="eyebrow">ডিজিটাল শেখার নতুন যাত্রা</span>
+          <h2>প্রযুক্তি শিখুন সহজ বাংলায়, দক্ষতা গড়ুন নিজের গতিতে</h2>
+          <p>AI Tools, Canva, Graphic Design, Digital Marketing, Website Development এবং Python Programming—শুরু থেকে ধাপে ধাপে শেখার জন্য Smart Digital Skills আপনার পাশে।</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#topics">শেখা শুরু করুন</a>
+            <a class="btn btn-outline" href="https://smartdigitalskillsbd.blogspot.com/" target="_blank" rel="noopener">আমাদের ব্লগ পড়ুন</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="topics">
+        <div class="section-head">
+          <h2>আপনি কী শিখতে চান?</h2>
+          <p>আপনার আগ্রহের বিষয় বেছে নিন এবং বাংলা টিউটোরিয়াল পড়া শুরু করুন।</p>
+        </div>
+        <div class="grid">
+          <article class="topic-card">
+            <div class="topic-icon">🤖</div>
+            <h3>AI Tools</h3>
+            <p>ChatGPTসহ বিভিন্ন AI টুল ব্যবহার করে কাজ সহজ ও দ্রুত করার কৌশল শিখুন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/search/label/AI%20Tools" target="_blank" rel="noopener">AI টিউটোরিয়াল দেখুন →</a>
+          </article>
+          <article class="topic-card">
+            <div class="topic-icon">🎨</div>
+            <h3>Canva & Graphic Design</h3>
+            <p>সোশ্যাল মিডিয়া পোস্ট, ব্যানার, লোগো ও প্রয়োজনীয় ডিজাইন তৈরি শিখুন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/search/label/Canva" target="_blank" rel="noopener">ডিজাইন টিউটোরিয়াল দেখুন →</a>
+          </article>
+          <article class="topic-card">
+            <div class="topic-icon">📣</div>
+            <h3>Digital Marketing</h3>
+            <p>Facebook Marketing, SEO, Content Marketing ও অনলাইন প্রচারের ভিত্তি জানুন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/search/label/Digital%20Marketing" target="_blank" rel="noopener">মার্কেটিং টিউটোরিয়াল দেখুন →</a>
+          </article>
+          <article class="topic-card">
+            <div class="topic-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS ও JavaScript দিয়ে ওয়েবসাইট তৈরির প্রাথমিক ধারণা নিন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/search/label/Web%20Development" target="_blank" rel="noopener">ওয়েব টিউটোরিয়াল দেখুন →</a>
+          </article>
+          <article class="topic-card">
+            <div class="topic-icon">🐍</div>
+            <h3>Python Programming</h3>
+            <p>একদম শুরু থেকে Python-এর বেসিক, উদাহরণ ও অনুশীলনের মাধ্যমে শিখুন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/search/label/Python" target="_blank" rel="noopener">Python টিউটোরিয়াল দেখুন →</a>
+          </article>
+          <article class="topic-card">
+            <div class="topic-icon">🚀</div>
+            <h3>Online Skills</h3>
+            <p>অনলাইনে কাজ শেখা, পোর্টফোলিও তৈরি ও নিজের দক্ষতা কাজে লাগানোর ধারণা নিন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/search/label/Online%20Skills" target="_blank" rel="noopener">অনলাইন স্কিল শিখুন →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-head">
+          <h2>Smart Digital Skills সম্পর্কে</h2>
+          <p>শেখা থেকে বাস্তব কাজে দক্ষতা তৈরি—এটাই আমাদের লক্ষ্য।</p>
+        </div>
+        <div class="two-col">
+          <div class="about-card">
+            <h3>সহজ ভাষায়, বাস্তব উদাহরণে শেখা</h3>
+            <p>Smart Digital Skills একটি বাংলা শিক্ষামূলক প্ল্যাটফর্ম। যারা ডিজিটাল দক্ষতা শিখতে চান, বিশেষ করে নতুন শিক্ষার্থী, তাদের জন্য সহজবোধ্য গাইড ও ব্যবহারিক টিউটোরিয়াল প্রকাশ করাই আমাদের উদ্দেশ্য।</p>
+            <p>এখানে শেখার বিষয়গুলো ধাপে ধাপে সাজানো হয়েছে, যাতে আপনি নিজের সময় অনুযায়ী অনুশীলন করতে পারেন।</p>
+          </div>
+          <div class="content-card">
+            <h3>আমাদের শেখার বিষয়</h3>
+            <ul class="feature-list">
+              <li>AI ও উৎপাদনশীলতার টুল</li>
+              <li>Canva ও গ্রাফিক ডিজাইন</li>
+              <li>ডিজিটাল মার্কেটিং ও SEO</li>
+              <li>ওয়েবসাইট তৈরি ও প্রোগ্রামিং</li>
+              <li>অনলাইন কাজের প্রস্তুতি ও দক্ষতা</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="start">
+        <div class="cta">
+          <div>
+            <h2>আজই শেখা শুরু করুন</h2>
+            <p>আমাদের বাংলা ব্লগে থাকা বিস্তারিত গাইডগুলো পড়ুন এবং নিয়মিত অনুশীলন করুন।</p>
+          </div>
+          <a class="btn" href="https://smartdigitalskillsbd.blogspot.com/" target="_blank" rel="noopener">সব ব্লগ পোস্ট দেখুন →</a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-head">
+          <h2>যোগাযোগ ও নীতিমালা</h2>
+          <p>প্রশ্ন, মতামত বা সহযোগিতার জন্য আমাদের Blogger সাইটে যোগাযোগের তথ্য দেখুন।</p>
+        </div>
+        <div class="grid">
+          <div class="content-card">
+            <h3>যোগাযোগ</h3>
+            <p>যোগাযোগের হালনাগাদ মাধ্যম ও তথ্য আমাদের মূল ব্লগে প্রকাশ করা হবে।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/" target="_blank" rel="noopener">মূল ব্লগে যান →</a>
+          </div>
+          <div class="content-card">
+            <h3>Privacy Policy</h3>
+            <p>ওয়েবসাইট ব্যবহার, তথ্য ও গোপনীয়তা সংক্রান্ত নীতিমালা পড়তে মূল ব্লগ দেখুন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/" target="_blank" rel="noopener">নীতিমালা দেখুন →</a>
+          </div>
+          <div class="content-card">
+            <h3>Disclaimer</h3>
+            <p>প্রকাশিত শিক্ষামূলক তথ্য ব্যবহারের আগে প্রয়োজন অনুযায়ী যাচাই করে নিন।</p>
+            <a class="text-link" href="https://smartdigitalskillsbd.blogspot.com/" target="_blank" rel="noopener">বিস্তারিত পড়ুন →</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Smart Digital Skills</h3>
+          <p>শিখুন, দক্ষতা বাড়ান এবং অনলাইনে এগিয়ে যান। সহজ বাংলায় ডিজিটাল দক্ষতা শেখার একটি উদ্যোগ।</p>
+        </div>
+        <div>
+          <h4>দ্রুত লিংক</h4>
+          <div class="footer-links">
+            <a href="#home">হোম</a>
+            <a href="#topics">বিষয়সমূহ</a>
+            <a href="#about">আমাদের সম্পর্কে</a>
+            <a href="#contact">যোগাযোগ</a>
+          </div>
+        </div>
+        <div>
+          <h4>মূল ব্লগ</h4>
+          <div class="footer-links">
+            <a href="https://smartdigitalskillsbd.blogspot.com/" target="_blank" rel="noopener">Smart Digital Skills Blog ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© <span id="year"></span> Smart Digital Skills. সর্বস্বত্ব সংরক্ষিত।</div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
